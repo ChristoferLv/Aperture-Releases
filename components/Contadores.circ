@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="bit0" val="none"/>
+      <a name="bit1" val="none"/>
+      <a name="bit10" val="none"/>
+      <a name="bit11" val="none"/>
+      <a name="bit12" val="none"/>
+      <a name="bit13" val="none"/>
+      <a name="bit14" val="none"/>
+      <a name="bit15" val="0"/>
+      <a name="bit2" val="none"/>
+      <a name="bit3" val="none"/>
+      <a name="bit4" val="none"/>
+      <a name="bit5" val="none"/>
+      <a name="bit6" val="none"/>
+      <a name="bit7" val="none"/>
+      <a name="bit8" val="none"/>
+      <a name="bit9" val="none"/>
+      <a name="fanout" val="1"/>
+      <a name="incoming" val="16"/>
+    </tool>
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Probe">
+      <a name="appearance" val="classic"/>
+      <a name="radix" val="16"/>
+    </tool>
+    <tool name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="width" val="16"/>
+    </tool>
+    <tool name="Pull Resistor">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Clock">
+      <a name="facing" val="north"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+    </tool>
+  </lib>
+  <main name="Contador"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="Contador">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="Contador"/>
+    <a name="simulationFrequency" val="8.0"/>
+    <appear>
+      <rect height="2" stroke="none" width="13" x="561" y="119"/>
+      <rect height="3" stroke="none" width="16" x="400" y="99"/>
+      <rect height="3" stroke="none" width="18" x="400" y="119"/>
+      <rect fill="none" height="60" stroke="#000000" stroke-width="2" width="210" x="415" y="94"/>
+      <rect height="25" stroke="none" width="211" x="415" y="130"/>
+      <text dominant-baseline="central" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="520" y="144">Contador de Ciclos</text>
+      <rect height="15" stroke="#000000" width="209" x="416" y="94"/>
+      <rect height="35" stroke="#000000" width="57" x="415" y="102"/>
+      <rect height="35" stroke="#000000" width="57" x="568" y="105"/>
+      <text dominant-baseline="central" fill="#ffffff" font-family="Dialog" font-size="12" font-weight="bold" text-anchor="start" x="416" y="101">Clock</text>
+      <text dominant-baseline="central" fill="#ffffff" font-family="Dialog" font-size="12" font-weight="bold" text-anchor="start" x="419" y="120">Zerar</text>
+      <text dominant-baseline="central" fill="#ffffff" font-family="Dialog" font-size="12" font-weight="bold" text-anchor="end" x="612" y="119">Ciclos</text>
+      <circ-anchor facing="east" x="620" y="100"/>
+      <circ-port dir="in" pin="490,280" x="400" y="100"/>
+      <circ-port dir="in" pin="550,330" x="400" y="120"/>
+      <circ-port dir="out" pin="650,250" x="560" y="120"/>
+    </appear>
+    <comp lib="0" loc="(490,280)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="clkSignal"/>
+    </comp>
+    <comp lib="0" loc="(510,180)" name="Constant">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(550,330)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="reset"/>
+    </comp>
+    <comp lib="0" loc="(650,250)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="NumeroDeCiclos"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="3" loc="(570,170)" name="Adder">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="4" loc="(520,220)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="width" val="32"/>
+    </comp>
+    <wire from="(490,280)" to="(510,280)"/>
+    <wire from="(510,140)" to="(510,160)"/>
+    <wire from="(510,140)" to="(620,140)"/>
+    <wire from="(510,160)" to="(530,160)"/>
+    <wire from="(510,180)" to="(530,180)"/>
+    <wire from="(510,210)" to="(510,250)"/>
+    <wire from="(510,210)" to="(590,210)"/>
+    <wire from="(510,250)" to="(520,250)"/>
+    <wire from="(510,270)" to="(510,280)"/>
+    <wire from="(510,270)" to="(520,270)"/>
+    <wire from="(510,280)" to="(510,290)"/>
+    <wire from="(510,290)" to="(520,290)"/>
+    <wire from="(550,310)" to="(550,330)"/>
+    <wire from="(570,170)" to="(590,170)"/>
+    <wire from="(580,250)" to="(620,250)"/>
+    <wire from="(590,170)" to="(590,210)"/>
+    <wire from="(620,140)" to="(620,250)"/>
+    <wire from="(620,250)" to="(650,250)"/>
+  </circuit>
+  <circuit name="Contador_Condicional">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="Contador_Condicional"/>
+    <a name="simulationFrequency" val="8.0"/>
+    <appear>
+      <rect height="2" stroke="none" width="20" x="399" y="139"/>
+      <rect height="2" stroke="none" width="20" x="400" y="119"/>
+      <rect height="2" stroke="none" width="20" x="400" y="99"/>
+      <rect height="15" stroke="#000000" width="209" x="416" y="94"/>
+      <rect fill="none" height="60" stroke="#000000" stroke-width="2" width="210" x="415" y="94"/>
+      <text dominant-baseline="central" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="521" y="149">Contador de Ciclos</text>
+      <rect height="35" stroke="#000000" width="57" x="415" y="102"/>
+      <rect height="25" stroke="none" width="211" x="415" y="130"/>
+      <text dominant-baseline="central" fill="#ffffff" font-family="Dialog" font-size="12" font-weight="bold" text-anchor="start" x="418" y="140">Zerar</text>
+      <text dominant-baseline="central" fill="#ffffff" font-family="Dialog" font-size="12" font-weight="bold" text-anchor="start" x="417" y="102">Clock</text>
+      <rect height="35" stroke="#000000" width="57" x="568" y="105"/>
+      <rect height="2" stroke="none" width="13" x="561" y="119"/>
+      <text dominant-baseline="central" fill="#ffffff" font-family="Dialog" font-size="12" font-weight="bold" text-anchor="end" x="605" y="120">Valor</text>
+      <text dominant-baseline="central" fill="#ffffff" font-family="Dialog" font-size="12" font-weight="bold" text-anchor="start" x="417" y="120">Habilitar</text>
+      <text dominant-baseline="central" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="531" y="145">Contador Condicional</text>
+      <circ-anchor facing="east" x="620" y="100"/>
+      <circ-port dir="in" pin="490,270" x="400" y="120"/>
+      <circ-port dir="in" pin="490,290" x="400" y="100"/>
+      <circ-port dir="in" pin="550,330" x="400" y="140"/>
+      <circ-port dir="out" pin="650,250" x="560" y="120"/>
+    </appear>
+    <comp lib="0" loc="(490,270)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="enable"/>
+    </comp>
+    <comp lib="0" loc="(490,290)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="clkSignalCond"/>
+    </comp>
+    <comp lib="0" loc="(510,180)" name="Constant">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(550,330)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="resetCond"/>
+    </comp>
+    <comp lib="0" loc="(650,250)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="NumeroDeCiclosCond"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="3" loc="(570,170)" name="Adder">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="4" loc="(520,220)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="width" val="32"/>
+    </comp>
+    <wire from="(490,270)" to="(520,270)"/>
+    <wire from="(490,290)" to="(520,290)"/>
+    <wire from="(510,140)" to="(510,160)"/>
+    <wire from="(510,140)" to="(620,140)"/>
+    <wire from="(510,160)" to="(530,160)"/>
+    <wire from="(510,180)" to="(530,180)"/>
+    <wire from="(510,210)" to="(510,250)"/>
+    <wire from="(510,210)" to="(590,210)"/>
+    <wire from="(510,250)" to="(520,250)"/>
+    <wire from="(550,310)" to="(550,330)"/>
+    <wire from="(570,170)" to="(590,170)"/>
+    <wire from="(580,250)" to="(620,250)"/>
+    <wire from="(590,170)" to="(590,210)"/>
+    <wire from="(620,140)" to="(620,250)"/>
+    <wire from="(620,250)" to="(650,250)"/>
+  </circuit>
+</project>
