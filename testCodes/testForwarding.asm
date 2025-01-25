@@ -18,12 +18,14 @@ add $t8, $t6, $t7
 add $t9, $t7, $t8
 sw $t9 0x4($t0)
 lw $s0 0x0($t0)
+add $zero, $zero, $zero
 add $s1, $s0, $t1
 sw $s1 0x8($t0)
 add $zero, $zero, $zero
 add $zero, $zero, $zero
 lw $s2 0x8($t0)
 lw $s3 0x4($t0)
+add $zero, $zero, $zero
 add $s4, $s2, $s3
 sw $s4 0xB($t0)
 
