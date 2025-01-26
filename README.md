@@ -39,7 +39,7 @@ deve ser trocado por:
   - Adição
     - Somador 4, 8 e 32 bits.
     - Somador lookahead 3 e 8 bits.
-    ![somador_32bits](https://github.com/user-attachments/assets/a6c9a786-1fe7-4cdf-9c95-a6539879697a)
+  ![somador_32bits](https://github.com/user-attachments/assets/a6c9a786-1fe7-4cdf-9c95-a6539879697a)
   - Subtração.
     - somador_subtrator 4 e 8 bits.
     - somador_subtrator lookahead 4 e 8 bits.
