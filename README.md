@@ -21,16 +21,34 @@ deve ser trocado por:
 
 ### Circuitos Digitais
 - Construção de portas lógicas usando transistores.
-- Construção de portas lógicas com equivalências entre NAND e NOR.
+- Construção de portas lógicas mostrando a equivalências com NAND e NOR.
+  ![Quadro_NAND](https://github.com/user-attachments/assets/3bf4b462-dc0d-4957-8552-fe60c1e94e72)
 - Construção de encoders e decoders.
+  - Decodificardor 2 entradas 4 saídas.
+  - Decodificador BCD.
+  - Decodificador para diplay de 7 segmentos.
+  - Codificador 4 entradas 2 saídas.
+  - Codificador BCD.
 - Construção de multiplexadores de demultiplexadores.
+  - Mux de duas, quatro e oito entradas de 1 bit.
+  - Mux de duas e quatro entradas de 2 bits (forma soma de produtos e produto das somas)
 - Construção de latches e flip-flops.
+  - Demux de duas, quatro e oito saídas de 1 bit.
+  - Demux de duas e quatro saídas de 2 bits.
 - Operações aritméticas:
-  - Adição.
+  - Adição
+    - Somador 4, 8 e 32 bits.
+    - Somador lookahead 3 e 8 bits.
     ![somador_32bits](https://github.com/user-attachments/assets/a6c9a786-1fe7-4cdf-9c95-a6539879697a)
   - Subtração.
+    - somador_subtrator 4 e 8 bits.
+    - somador_subtrator lookahead 4 e 8 bits.
   - Multiplicação.
+    - Multiplicador 8 bits sequencial.
+    - Multiplicador array de 4 e 8 bits.
+    - Multiplicador array de 8 bits sem subcircuito.
   - Divisão.
+    - Divisor array de 4 e 8 bits.
 - Construção de registradores com combinações de entrada e saída:
   - Paralela-paralela.
   - Paralela-serial.
