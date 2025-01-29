@@ -84,21 +84,21 @@ deve ser trocado por:
 | `jr`              | `PC = rs`              |   `addi`            | `rt = rs + immediate`  |
 
 #### Implementações MIPS Disponíveis
-- **Monociclo:** Executa as instruções em um ciclo de clock.
+- **Monociclo:** Executa as instruções em um ciclo de clock. (Segue o diagrama 4.24 do Patterson)
   ![monociclo](https://github.com/user-attachments/assets/e8fdf56a-316f-4571-af8a-94c6205688aa)
 
-- **Pipeline_clean:** Pipeline de cinco estágios sem tratamento de hazards.
-- **Pipeline2:**
+- **Pipeline_clean:** Pipeline de cinco estágios sem tratamento de hazards. (Segue o diagrama 4.41 do Patterson)
+- **Pipeline2:** (Segue o diagrama 4.51 do Patterson)
   - Trata hazards de controle com bolhas.
-- **Pipeline_2_bubble:**
+- **Pipeline_2_bubble:** 
   - Trata todos os hazards com bolhas.
-- **Pipeline_2_fw:**
+- **Pipeline_2_fw:** (Segue o diagrama 4.60 do Patterson)
   - Trata hazards de dados com forwarding.
 - **Pipeline_2_v2:**
   - Adianta o controle de desvio para o estágio 2 para maior eficiência.
 - **Pipeline_2_v2_bubble:**
   - Trata hazards de dados com bolhas.
-- **Pipeline_2_v2_fw:**
+- **Pipeline_2_v2_fw:** (Segue o diagrama 4.65 do Patterson)
   - Trata hazards de dados com forwarding.
 
 ### Códigos para testes
@@ -106,6 +106,7 @@ São disponibilizados alguns códigos de teste focados em unidades funcionais pa
 
 ## Referências
 Mais informações sobre o conjunto de instruções MIPS nos seguintes links:
+- [Computer Organization and Design: The Hardware/Software Interface](https://edisciplinas.usp.br/pluginfile.php/7898320/mod_resource/content/1/Computer%20Organization%20and%20Design%205E%20-%20Patterson%20Hennessy%20-%200124077269.pdf)
 - [COD 5e Greencard](https://booksite.elsevier.com/9780124077263/downloads/COD_5e_Greencard.pdf)
 - [MIPS Instruction Formats - Wikibooks](https://en.wikibooks.org/wiki/MIPS_Assembly/Instruction_Formats)
 - [MIPS Reference](https://uweb.engr.arizona.edu/~ece369/Resources/spim/MIPSReference.pdf)
