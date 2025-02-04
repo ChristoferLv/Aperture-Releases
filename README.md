@@ -32,9 +32,9 @@ deve ser trocado por:
 - Construção de multiplexadores de demultiplexadores.
   - Mux de duas, quatro e oito entradas de 1 bit.
   - Mux de duas e quatro entradas de 2 bits (forma soma de produtos e produto das somas)
-- Construção de latches e flip-flops.
   - Demux de duas, quatro e oito saídas de 1 bit.
   - Demux de duas e quatro saídas de 2 bits.
+- Construção de latches e flip-flops.
 - Operações aritméticas:
   - Adição
     - Somador 4, 8 e 32 bits.
