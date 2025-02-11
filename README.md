@@ -29,7 +29,7 @@ deve ser trocado por:
   - Decodificador para diplay de 7 segmentos.
   - Codificador 4 entradas 2 saídas.
   - Codificador BCD.
-- Construção de multiplexadores de demultiplexadores.
+- Construção de multiplexadores e demultiplexadores.
   - Mux de duas, quatro e oito entradas de 1 bit.
   - Mux de duas e quatro entradas de 2 bits (forma soma de produtos e produto das somas)
   - Demux de duas, quatro e oito saídas de 1 bit.
