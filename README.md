@@ -54,6 +54,10 @@ deve ser trocado por:
   - Paralela-serial.
   - Serial-paralela.
   - Serial-serial.
+- Memórias
+  - RAM 1x4, 4x1, 4x4, 8x1, 8x8
+  ![RAM_8x8](https://github.com/user-attachments/assets/0a673661-bac2-4fb5-b653-45f2583db25a)
+
 
 ### Arquitetura de Computadores
 - Fornecemos a construção de caminhos de dados MIPS parciais para:
