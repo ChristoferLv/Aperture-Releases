@@ -543,6 +543,9 @@
     <comp lib="8" loc="(580,2730)" name="Text">
       <a name="text" val="A"/>
     </comp>
+    <comp lib="8" loc="(580,2870)" name="Text">
+      <a name="text" val="B"/>
+    </comp>
     <comp lib="8" loc="(580,2980)" name="Text">
       <a name="text" val="C"/>
     </comp>
@@ -551,9 +554,6 @@
     </comp>
     <comp lib="8" loc="(580,3260)" name="Text">
       <a name="text" val="E"/>
-    </comp>
-    <comp lib="8" loc="(582,2870)" name="Text">
-      <a name="text" val="B"/>
     </comp>
     <comp lib="8" loc="(585,3350)" name="Text">
       <a name="text" val="F"/>
@@ -1731,6 +1731,9 @@
     <comp lib="8" loc="(1090,220)" name="Text">
       <a name="text" val="A"/>
     </comp>
+    <comp lib="8" loc="(1090,355)" name="Text">
+      <a name="text" val="B"/>
+    </comp>
     <comp lib="8" loc="(1090,470)" name="Text">
       <a name="text" val="C"/>
     </comp>
@@ -1739,9 +1742,6 @@
     </comp>
     <comp lib="8" loc="(1090,750)" name="Text">
       <a name="text" val="E"/>
-    </comp>
-    <comp lib="8" loc="(1092,359)" name="Text">
-      <a name="text" val="B"/>
     </comp>
     <comp lib="8" loc="(1095,840)" name="Text">
       <a name="text" val="F"/>
@@ -1800,6 +1800,41 @@
     <comp lib="8" loc="(720,230)" name="Text">
       <a name="font" val="SansSerif bold 18"/>
       <a name="text" val="1"/>
+    </comp>
+    <comp lib="8" loc="(886,105)" name="Text">
+      <a name="font" val="Monospaced bold 16"/>
+      <a name="halign" val="left"/>
+      <a name="text" val="Pin_C = ~bit2+bit1+bit3"/>
+    </comp>
+    <comp lib="8" loc="(886,125)" name="Text">
+      <a name="font" val="Monospaced bold 16"/>
+      <a name="halign" val="left"/>
+      <a name="text" val="Pin_D = (~bit3⋅~bit1)+(~bit3⋅bit2)+(bit3⋅~bit2⋅bit1)+(bit2⋅~bit1)+bit4"/>
+    </comp>
+    <comp lib="8" loc="(886,145)" name="Text">
+      <a name="font" val="Monospaced bold 16"/>
+      <a name="halign" val="left"/>
+      <a name="text" val="Pin_E = (~bit3⋅~bit1)+(bit2⋅~bit1)"/>
+    </comp>
+    <comp lib="8" loc="(886,165)" name="Text">
+      <a name="font" val="Monospaced bold 16"/>
+      <a name="halign" val="left"/>
+      <a name="text" val="Pin_F = (~bit2⋅~bit1)+(bit3⋅~bit2)+(bit3⋅~bit1)+bit4"/>
+    </comp>
+    <comp lib="8" loc="(886,185)" name="Text">
+      <a name="font" val="Monospaced bold 16"/>
+      <a name="halign" val="left"/>
+      <a name="text" val="Pin_G = (~bit3⋅bit2)+(bit3⋅~bit2)+bit4+(bit2⋅~bit1)"/>
+    </comp>
+    <comp lib="8" loc="(886,65)" name="Text">
+      <a name="font" val="Monospaced bold 16"/>
+      <a name="halign" val="left"/>
+      <a name="text" val="Pin_A = (~bit3⋅~bit1)+bit2+(bit3⋅bit1)+bit4"/>
+    </comp>
+    <comp lib="8" loc="(886,85)" name="Text">
+      <a name="font" val="Monospaced bold 16"/>
+      <a name="halign" val="left"/>
+      <a name="text" val="Pin_B = ~bit3+(~bit2⋅~bit1)+(bit2⋅bit1)"/>
     </comp>
     <wire from="(1010,1040)" to="(1020,1040)"/>
     <wire from="(1010,270)" to="(1150,270)"/>
