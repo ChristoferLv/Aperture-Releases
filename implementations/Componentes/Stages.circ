@@ -33,12 +33,8 @@
   <lib desc="#Arithmetic" name="3"/>
   <lib desc="#Memory" name="4"/>
   <lib desc="#I/O" name="5"/>
-  <lib desc="#TTL" name="6"/>
-  <lib desc="#TCL" name="7"/>
-  <lib desc="#Base" name="8"/>
-  <lib desc="#BFH-Praktika" name="9"/>
-  <lib desc="#Input/Output-Extra" name="10"/>
-  <lib desc="#Soc" name="11"/>
+  <lib desc="#Base" name="6"/>
+  <lib desc="#Input/Output-Extra" name="7"/>
   <main name="IF_ID"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -46,15 +42,15 @@
     <a name="simrand" val="0"/>
   </options>
   <mappings>
-    <tool lib="8" map="Button2" name="Poke Tool"/>
-    <tool lib="8" map="Button3" name="Menu Tool"/>
-    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+    <tool lib="6" map="Button2" name="Poke Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
   </mappings>
   <toolbar>
-    <tool lib="8" name="Poke Tool"/>
-    <tool lib="8" name="Edit Tool"/>
-    <tool lib="8" name="Wiring Tool"/>
-    <tool lib="8" name="Text Tool"/>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Wiring Tool"/>
+    <tool lib="6" name="Text Tool"/>
     <sep/>
     <tool lib="0" name="Pin"/>
     <tool lib="0" name="Pin">
@@ -2661,5 +2657,134 @@
     <wire from="(870,440)" to="(880,440)"/>
     <wire from="(870,570)" to="(880,570)"/>
     <wire from="(870,700)" to="(880,700)"/>
+  </circuit>
+  <circuit name="IF_ID_JTB">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="IF_ID_JTB"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="8.0"/>
+    <appear>
+      <rect fill="#dedede" height="2" stroke="#c0c0c0" stroke-width="3" width="5" x="101" y="349"/>
+      <rect fill="#dedede" height="2" stroke="#c0c0c0" stroke-width="3" width="5" x="164" y="889"/>
+      <rect fill="#dedede" height="2" stroke="#c0c0c0" stroke-width="3" width="5" x="164" y="1029"/>
+      <rect fill="#dedede" height="5" stroke="#c0c0c0" stroke-width="3" width="2" x="119" y="1174"/>
+      <rect fill="#dedede" height="5" stroke="#c0c0c0" stroke-width="3" width="2" x="149" y="1174"/>
+      <rect fill="#dedede" height="5" stroke="#c0c0c0" stroke-width="3" width="2" x="129" y="11"/>
+      <rect fill="#dedede" height="2" stroke="#c0c0c0" stroke-width="3" width="5" x="101" y="199"/>
+      <rect fill="#dedede" height="2" stroke="#c0c0c0" stroke-width="3" width="5" x="101" y="1029"/>
+      <rect fill="#dedede" height="2" stroke="#c0c0c0" stroke-width="3" width="5" x="164" y="29"/>
+      <rect fill="#373737" height="1158" rx="3" ry="3" stroke="#000000" stroke-width="2" width="61" x="104" y="17"/>
+      <text dominant-baseline="central" fill="#f0f0f0" font-family="Segoe UI" font-size="14" font-style="italic" font-weight="bold" text-anchor="middle" x="135" y="225">IF_ID</text>
+      <rect fill="none" height="1149" rx="3" ry="3" stroke="#000000" width="53" x="108" y="21"/>
+      <circ-anchor facing="east" x="150" y="20"/>
+      <circ-port dir="in" pin="150,130" x="130" y="10"/>
+      <circ-port dir="in" pin="360,250" x="100" y="350"/>
+      <circ-port dir="in" pin="360,440" x="100" y="200"/>
+      <circ-port dir="in" pin="360,630" x="100" y="1030"/>
+      <circ-port dir="in" pin="410,830" x="120" y="1180"/>
+      <circ-port dir="in" pin="790,130" x="150" y="1180"/>
+      <circ-port dir="out" pin="590,250" x="170" y="30"/>
+      <circ-port dir="out" pin="590,440" x="170" y="890"/>
+      <circ-port dir="out" pin="590,630" x="170" y="1030"/>
+    </appear>
+    <comp lib="0" loc="(150,130)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="clk_IF_ID"/>
+    </comp>
+    <comp lib="0" loc="(360,250)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="Instruction_IF"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(360,440)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="PCPlus4_IF"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(360,630)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="updateJTB_IF"/>
+    </comp>
+    <comp lib="0" loc="(410,830)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="enable_IF_ID"/>
+    </comp>
+    <comp lib="0" loc="(590,250)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Instruction_ID"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(590,440)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="PCPus4_ID"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(590,630)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="updateJTB_ID"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(790,130)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="clr_IF_ID"/>
+    </comp>
+    <comp lib="4" loc="(450,220)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="reg_Instruction_IF_ID"/>
+      <a name="showInTab" val="true"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="4" loc="(450,410)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="reg_PCPlus4_IF_ID"/>
+      <a name="showInTab" val="true"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="4" loc="(450,600)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="showInTab" val="true"/>
+      <a name="width" val="1"/>
+    </comp>
+    <wire from="(150,130)" to="(150,300)"/>
+    <wire from="(150,300)" to="(150,490)"/>
+    <wire from="(150,300)" to="(440,300)"/>
+    <wire from="(150,490)" to="(150,680)"/>
+    <wire from="(150,490)" to="(440,490)"/>
+    <wire from="(150,680)" to="(440,680)"/>
+    <wire from="(360,250)" to="(450,250)"/>
+    <wire from="(360,440)" to="(450,440)"/>
+    <wire from="(360,630)" to="(450,630)"/>
+    <wire from="(410,270)" to="(410,460)"/>
+    <wire from="(410,270)" to="(450,270)"/>
+    <wire from="(410,460)" to="(410,650)"/>
+    <wire from="(410,460)" to="(450,460)"/>
+    <wire from="(410,650)" to="(410,830)"/>
+    <wire from="(410,650)" to="(450,650)"/>
+    <wire from="(440,290)" to="(440,300)"/>
+    <wire from="(440,290)" to="(450,290)"/>
+    <wire from="(440,480)" to="(440,490)"/>
+    <wire from="(440,480)" to="(450,480)"/>
+    <wire from="(440,670)" to="(440,680)"/>
+    <wire from="(440,670)" to="(450,670)"/>
+    <wire from="(480,310)" to="(480,360)"/>
+    <wire from="(480,360)" to="(790,360)"/>
+    <wire from="(480,500)" to="(480,550)"/>
+    <wire from="(480,550)" to="(790,550)"/>
+    <wire from="(480,690)" to="(480,740)"/>
+    <wire from="(480,740)" to="(790,740)"/>
+    <wire from="(510,250)" to="(590,250)"/>
+    <wire from="(510,440)" to="(590,440)"/>
+    <wire from="(510,630)" to="(590,630)"/>
+    <wire from="(790,130)" to="(790,360)"/>
+    <wire from="(790,360)" to="(790,550)"/>
+    <wire from="(790,550)" to="(790,740)"/>
   </circuit>
 </project>
