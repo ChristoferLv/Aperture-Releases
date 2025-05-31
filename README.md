@@ -91,18 +91,20 @@ deve ser trocado por:
   ![monociclo](https://github.com/user-attachments/assets/e8fdf56a-316f-4571-af8a-94c6205688aa)
 
 - **Pipeline_clean:** Pipeline de cinco estágios sem tratamento de hazards. (Segue o diagrama 4.41 do Patterson)
-- **Pipeline2:** (Segue o diagrama 4.51 do Patterson)
+- **Pipeline_BD:** (Segue o diagrama 4.51 do Patterson)
   - Trata hazards de controle com bolhas.
-- **Pipeline_2_bubble:** 
+- **Pipeline_BD_BB:** 
   - Trata todos os hazards com bolhas.
-- **Pipeline_2_fw:** (Segue o diagrama 4.60 do Patterson)
+- **Pipeline_BD_FW:** (Segue o diagrama 4.60 do Patterson)
   - Trata hazards de dados com forwarding.
-- **Pipeline_2_v2:**
+- **Pipeline_AB_BD:**
   - Adianta o controle de desvio para o estágio 2 para maior eficiência.
-- **Pipeline_2_v2_bubble:**
+- **Pipeline_AB_BB:**
   - Trata hazards de dados com bolhas.
-- **Pipeline_2_v2_fw:** (Segue o diagrama 4.65 do Patterson)
+- **Pipeline_AB_BD_FW:** (Segue o diagrama 4.65 do Patterson)
   - Trata hazards de dados com forwarding.
+- **Pipeline_AB_BD_FW_JTB:**
+  - Adição de uma JTB.
 
 ### Códigos para testes
 São disponibilizados alguns códigos de teste focados em unidades funcionais para o usuário testar seus funcionamentos.
