@@ -5,6 +5,7 @@ Este projeto tem como objetivo fornecer um material interativo e visual para col
 ## Execução
 - **Requisitos:** Utilize a versão 3.8.0 do Logisim-evolution: [logisim-evolution no GitHub](https://github.com/logisim-evolution/logisim-evolution)
 - **Landing page do projeto:** [Projeto Aperture](https://christoferlv.github.io/ProjetoAperture/)
+- **Vídeo explicativo de como carregar códigos:** (https://youtu.be/M2T5MPhDHDg)
 - **Configuração de diretórios:**
   - Para abrir as arquiteturas implementadas, a pasta `components` deve estar no mesmo diretório do arquivo `.circ` correspondente.
   - **Nota para sistemas Linux:** Pode ser necessário editar o XML dos arquivos `.circ`, substituindo `\\` por `/` no caminho dos componentes.
