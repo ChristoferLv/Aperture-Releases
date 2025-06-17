@@ -115,7 +115,7 @@ Mais informações sobre o conjunto de instruções MIPS nos seguintes links:
 - [Computer Organization and Design: The Hardware/Software Interface](https://edisciplinas.usp.br/pluginfile.php/7898320/mod_resource/content/1/Computer%20Organization%20and%20Design%205E%20-%20Patterson%20Hennessy%20-%200124077269.pdf)
 - [COD 5e Greencard](https://booksite.elsevier.com/9780124077263/downloads/COD_5e_Greencard.pdf)
 - [MIPS Instruction Formats - Wikibooks](https://en.wikibooks.org/wiki/MIPS_Assembly/Instruction_Formats)
-- [MIPS Reference](https://uweb.engr.arizona.edu/~ece369/Resources/spim/MIPSReference.pdf)
+- [MIPS Reference Sheet](https://github.com/user-attachments/files/20784801/MIPSReference.pdf)
 - [MIPS Opcodes - OpenCores](https://opencores.org/projects/plasma/opcodes)
 
 
